@@ -101,6 +101,7 @@ export default class TodoListData {
       const removeBtn = document.createElement('button');
       removeBtn.className = 'todo-list-item-remove';
       removeBtn.dataset.id = task.taskIndex;
+      removeBtn.title = 'delete task from list';
       const newListTag = document.createElement('li');
       newListTag.className = 'todo-list-item';
       newListTag.id = `list-item${task.taskIndex}`;
