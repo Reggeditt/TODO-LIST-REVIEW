@@ -1,1 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 80%;
+  max-width: 600px;
+  max-height: 80%;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.682);
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding-block: 15px;
+  padding-inline-end: 10px;
+}
+
+.todo-header-text {
+  padding-inline: 10px;
+  text-transform: capitalize;
+}
+
+#reset-btn {
+  padding-right: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(./sync-svgrepo-com.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  outline: none;
+}
+
+#form {
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline-end: 10px;
+}
+
+#todo-input {
+  width: 90%;
+  outline: none;
+  border: none;
+  padding: 20px 10px;
+  background-color: white;
+}
+
+#enter-input {
+  width: 12px;
+  height: 12px;
+  background-image: url(./arrow-turn-down-left-svgrepo-com.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+.todo-list-wrap {
+  padding: 0;
+}
+
+#drop-box {
+  width: 100%;
+  height: 50px;
+}
+
+.todo-list-wrap li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: 10px;
+  text-decoration: none;
+  list-style: none;
+  border-bottom: 1px lightgrey solid;
+  position: relative;
+}
+
+.todo-list-item-description {
+  border: none;
+  outline: none;
+  width: 90%;
+  padding: 10px;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  font-weight: 800;
+}
+
+.todo-list-item-remove {
+  display: none;
+  width: 25px;
+  height: 25px;
+  background: url(./delete-svgrepo-com.svg) no-repeat center center/cover;
+  border: none;
+  cursor: pointer;
+}
+
+.todo-list-wrap li::after {
+  content: "";
+  display: var(--before);
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-image: url(./menu-vertical-svgrepo-com.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: move;
+}
+
+.clear-completed {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
