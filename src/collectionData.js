@@ -8,64 +8,22 @@ export default class TodoListData {
     task.taskIndex = this.todoListTasks.length + 1;
     this.todoListTasks.push(task);
     this.updateStorage();
-  }
+  };
 
   removeTask = (index) => {
     this.todoListTasks = this.todoListTasks.filter((task) => task.taskIndex !== index);
+    this.reassignTaskIndex();
+  };
+
+  reassignTaskIndex = () => {
     this.todoListTasks.forEach((task, i) => {
       task.taskIndex = i + 1;
     });
     this.updateStorage();
-  }
+  };
 
-  clearCompletedTasks = () => {
-    this.todoListTasks = this.todoListTasks.filter((task) => task.isCompleted === false);
-    this.todoListTasks.forEach((task, i) => {
-      task.taskIndex = i + 1;
-    });
-    this.updateStorage();
-  }
-
-  resetList = () => {
-    this.todoListTasks = [];
-    this.updateStorage();
-    window.location.reload();
-  }
-
-  renderList = (todoListWrapperElement, drag, drop, allowDrop) => {
-    todoListWrapperElement.innerHTML = '';
-    this.todoListTasks = JSON.parse(window.localStorage.getItem('todoList')) || [];
-    this.todoListTasks.forEach((task, i) => {
-      task.taskIndex = i + 1;
-
-      /* create elements for each task which includes a checkbox,
-      input field and a delete button nested in a list tag */
-      const checkbox = document.createElement('input');
-      checkbox.type = 'checkbox';
-      checkbox.id = `checkbox${task.taskIndex}`;
-      checkbox.dataset.id = task.taskIndex;
-      const listDescription = document.createElement('input');
-      listDescription.type = 'text';
-      listDescription.className = 'todo-list-item-description';
-      listDescription.value = task.description;
-      const removeBtn = document.createElement('button');
-      removeBtn.className = 'todo-list-item-remove';
-      removeBtn.dataset.id = task.taskIndex;
-      const newListTag = document.createElement('li');
-      newListTag.className = 'todo-list-item';
-      newListTag.id = `list-item${task.taskIndex}`;
-
-      // implement drag and drop functionality
-      newListTag.draggable = true;
-      newListTag.addEventListener('dragstart', drag);
-      newListTag.addEventListener('drop', drop);
-      newListTag.addEventListener('dragover', allowDrop);
-      newListTag.append(checkbox, listDescription, removeBtn);
-      todoListWrapperElement.appendChild(newListTag);
-      this.taskRemoveButtons.push(removeBtn);
-    });
-
-    // toggle isCompleted to true/false when checkbox is checked/unchecked
+  // toggle isCompleted to true/false when checkbox is checked/unchecked
+  setCompletedStatus = (todoListWrapperElement) => {
     const todoListWrapperChildren = Array.from(todoListWrapperElement.children);
     todoListWrapperChildren.forEach((child, index) => {
       child.children[0].addEventListener('click', () => {
@@ -80,8 +38,11 @@ export default class TodoListData {
         }
       });
     });
+  };
 
-    // add event listener to input field to toggle styling and update task description
+  // add event listener to input field to toggle styling and update task description
+  editTaskDescription = (todoListWrapperElement) => {
+    const todoListWrapperChildren = Array.from(todoListWrapperElement.children);
     const listDescriptionArr = document.getElementsByClassName('todo-list-item-description');
     const inputFields = Array.from(listDescriptionArr);
     inputFields.forEach((input, i) => {
@@ -109,6 +70,54 @@ export default class TodoListData {
         this.updateStorage();
       });
     });
+  };
+
+  clearCompletedTasks = () => {
+    this.todoListTasks = this.todoListTasks.filter((task) => task.isCompleted === false);
+    this.reassignTaskIndex();
+  };
+
+  resetList = () => {
+    this.todoListTasks = [];
+    this.updateStorage();
+    window.location.reload();
+  };
+
+  renderList = (todoListWrapperElement, drag, drop, allowDrop) => {
+    todoListWrapperElement.innerHTML = '';
+    this.todoListTasks = JSON.parse(window.localStorage.getItem('todoList')) || [];
+    this.reassignTaskIndex();
+    this.todoListTasks.forEach((task) => {
+      /* create elements for each task which includes a checkbox,
+      input field and a delete button nested in a list tag */
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.id = `checkbox${task.taskIndex}`;
+      checkbox.dataset.id = task.taskIndex;
+      const listDescription = document.createElement('input');
+      listDescription.type = 'text';
+      listDescription.className = 'todo-list-item-description';
+      listDescription.value = task.description;
+      const removeBtn = document.createElement('button');
+      removeBtn.className = 'todo-list-item-remove';
+      removeBtn.dataset.id = task.taskIndex;
+      const newListTag = document.createElement('li');
+      newListTag.className = 'todo-list-item';
+      newListTag.id = `list-item${task.taskIndex}`;
+
+      // add event listeners to implement drag and drop functionality
+      newListTag.draggable = true;
+      newListTag.addEventListener('dragstart', drag);
+      newListTag.addEventListener('drop', drop);
+      newListTag.addEventListener('dragover', allowDrop);
+
+      newListTag.append(checkbox, listDescription, removeBtn);
+      todoListWrapperElement.appendChild(newListTag);
+      this.taskRemoveButtons.push(removeBtn);
+    });
+
+    this.setCompletedStatus(todoListWrapperElement);
+    this.editTaskDescription(todoListWrapperElement);
 
     // add event listener to delete button to remove task from the list
     this.taskRemoveButtons.forEach((button) => {
@@ -118,11 +127,11 @@ export default class TodoListData {
         this.renderList(todoListWrapperElement, drag, drop, allowDrop);
       });
     });
-  }
+  };
 
   // Update local storage
   updateStorage = () => {
     localStorage.setItem('todoList', JSON.stringify(this.todoListTasks));
     this.todoListTasks = JSON.parse(window.localStorage.getItem('todoList'));
-  }
+  };
 }
