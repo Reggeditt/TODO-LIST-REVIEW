@@ -1,4 +1,4 @@
-# to-do-list
+# to-do List Web App
 
 
 <a name="readme-top"></a>
@@ -42,22 +42,22 @@
 
 ## 🛠 Built With <a name="built-with"></a>
 
-### Tech Stack <a name="tech-stack"></a>
+### Html, Css & JavaScript<a name="tech-stack"></a>
 
 <details>
-  <summary>Client</summary>
+  <summary>Html</summary>
   <ul>
     <li>HTML5</li>
   </ul>
 </details>
 <details>
-  <summary>Client</summary>
+  <summary>Css</summary>
   <ul>
     <li>CSS3</li>
   </ul>
 </details>
 <details>
-  <summary>Client</summary>
+  <summary>JavaScript</summary>
   <ul>
     <li>JS</li>
   </ul>
@@ -68,9 +68,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- User_can_registers_Todo_list
-- User_can_remove_Todo_list
-- Data_will_be_stored_in_localstorage
+- User_can_register_new_tasks_to_Todo_list
+- User_can_remove_task_entries_from_Todo_list
+- Data_is_stored_in_localstorage
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,10 +87,6 @@
 <!-- GETTING STARTED -->
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Check the index.html to view the page.
- 
-
-
 ### Prerequisites
 
 In order to run this project you need:
@@ -105,17 +101,19 @@ In order to run this project you need:
 ### Setup
 
 Clone this repository to your desired folder, access the directory and run the html file: 
-To clone: git clone git@github.com:Lornakaboro/Awesome-books.git
-to change to directory: cd Awesome-books
+To clone: git clone git@github.com:reggedit/TODO-LIST-REVIEW.git
+to change to directory: cd TODO-LIST-REVIEW
 Inside you will find the html file.
 
 
 ### Install
 
 Linters have been installed for this project(npm install).
-Added a gitignore file and included the node_modules and text.md files.
+Add a gitignore file and include the node_modules and text.md files.
 Linter actions are integreated with github.
+install webpack as the bundler for the project.
 install jest in your local environment for testing purposes.
+
 ### Usage
 execute the following steps:
 To run the project on the html file run it through dev server.
@@ -144,7 +142,7 @@ To run the project on the html file run it through liveserver.
 ## 👥 Authors <a name="authors"></a>
 
 
-**Tetteh**
+**Tetteh Kodjo-Sarso**
 - GitHub: [@Reggeditt](https://github.com/Reggeditt)
 
  **YosefGeda**
@@ -171,7 +169,7 @@ You can contact me for any question you have on the listed social media pages.
 
 ## Show your support
 
-If you like this project follow and give thumbs up on likedin
+If you like this project, star this repository. 🙏
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,7 +178,7 @@ If you like this project follow and give thumbs up on likedin
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank to my coding partner.
+I would like to thank microverse inc for this awesome challenge. I would also like to offer special thanks to my coding partner.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -196,6 +194,6 @@ I would like to thank to my coding partner.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
+This project is [MIT](./License.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
