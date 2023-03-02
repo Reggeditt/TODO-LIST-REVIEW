@@ -19,7 +19,11 @@ class TodoListData {
 
   removeTask = (index) => {
     this.todoListTasks = this.todoListTasks.filter((task) => task.taskIndex !== index);
-    // this.reassignTaskIndex();
+    return this.todoListTasks;
+  };
+
+  clear = () => {
+    this.todoListTasks = [];
   };
 }
 

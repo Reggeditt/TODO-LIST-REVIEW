@@ -3,10 +3,7 @@ class LocalStorage {
     this.store = {};
   }
 
-  getItem = (key) => {
-    console.log(key);
-    return this.store.key;
-  };
+  getItem = () => this.store.key;
 
   setItem = (key, value) => {
     this.store.key = JSON.stringify(value);
