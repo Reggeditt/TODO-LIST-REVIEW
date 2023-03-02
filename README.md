@@ -1,35 +1,13 @@
+# to-do-list
+
+
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
 
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
+  
   <h3><b>Microverse README Template</b></h3>
 
 </div>
@@ -57,12 +35,12 @@ After you're finished please remove all the comments and instructions!
 - [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
-
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [to-do-list] <a name="about-project"></a>
 
-**[your_project__name]** is a...
+
+**[# 📖 [to-do-list]  Webpage to save and dlelete Todo lists.  
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -71,121 +49,86 @@ After you're finished please remove all the comments and instructions!
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li>HTML5</li>
+  </ul>
+</details>
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li>CSS3</li>
+  </ul>
+</details>
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li>JS</li>
   </ul>
 </details>
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- User_can_registers_Todo_list
+- User_can_remove_Todo_list
+- Data_will_be_stored_in_localstorage
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
-
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+>[You can view the page](https://reggeditt.github.io/todo-list-App2/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
 
+
+<!-- GETTING STARTED -->
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps.
+> Check the index.html to view the page.
+ 
+
 
 ### Prerequisites
 
 In order to run this project you need:
+- Install Git in your computer [Git](https://git-scm.com/downloads)
+- Any text editor [VSCode](https://code.visualstudio.com/download) 
+- Install linters on your local env't
+ 
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
 
 ### Setup
 
-Clone this repository to your desired folder:
+Clone this repository to your desired folder, access the directory and run the html file: 
+To clone: git clone git@github.com:Lornakaboro/Awesome-books.git
+to change to directory: cd Awesome-books
+Inside you will find the html file.
 
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
 
 ### Install
 
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
+Linters have been installed for this project(npm install).
+Added a gitignore file and included the node_modules and text.md files.
+Linter actions are integreated witg github.
 
 ### Usage
-
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
+execute the following steps:
+To run the project on the html file run it through liveserver.
 
 ### Run tests
+ run npx hint . 
+ and npx stylelint "**/*.{css,scss}"
+ and npx eslint .
 
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
 
 ### Deployment
+[You can view the page](https://reggeditt.github.io/todo-list-App2/)
 
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -193,17 +136,14 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Kodjo-Sarso Tetteh**
 
+**Tetteh**
 - GitHub: [@Reggeditt](https://github.com/Reggeditt)
-- Twitter: [@tksarso](https://twitter.com/tksarso)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tetteh-kodjo-sarso-888989125/)
 
-<!-- 👤 **Author2** -->
+ **YosefGeda**
+- GitHub: [@yosefgeda](https://github.com/yosefgeda)
 
-<!-- - GitHub: [@githubhandle](https://github.com/githubhandle) -->
-<!-- - Twitter: [@twitterhandle](https://twitter.com/twitterhandle) -->
-<!-- - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle) -->
+ 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -211,35 +151,29 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- [ ] **[Project_will_be_refactored_to_add_and_remove_list]**
+- [ ] **[Checkboxes_will_be_activated]**
 
 <!-- CONTRIBUTING -->
-
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Feel free to check the [issue page](https://github.com/Reggeditt/TODO-LIST-REVIEW/issues)
 
 <!-- SUPPORT -->
+You can contact me for any question you have on the listed social media pages.
 
-## ⭐️ Show your support <a name="support"></a>
-
-If you like this project...
+If you like this project follow and give thumbs up on likedin
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank...
+I would like to thank to my coding partner.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -247,22 +181,18 @@ I would like to thank...
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-- **[Question_1]**
 
-  - [Answer_1]
+- **[What_version_of_chrome_do_I_need_to_view_the_page]**
 
-- **[Question_2]**
+  - [All_versions_are_capable]
 
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE.md) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
