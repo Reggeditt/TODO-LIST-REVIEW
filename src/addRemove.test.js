@@ -50,3 +50,28 @@ describe('add list tag in html', () => {
     });
   });
 });
+
+describe('removeTask', () => {
+  const todoListDataTest = new TodoListData();
+  todoListDataTest.todoListTasks = [
+    {
+      description: 'test1',
+      isCompleted: false,
+      taskIndex: 1,
+    },
+    {
+      description: 'test2',
+      isCompleted: false,
+      taskIndex: 2,
+    },
+    {
+      description: 'test3',
+      isCompleted: false,
+      taskIndex: 3,
+    },
+  ];
+
+  test('should remove a task from the todoListTasks array', () => {
+    expect(todoListDataTest.removeTask(1)).toEqual(todoListDataTest.todoListTasks);
+  });
+});
