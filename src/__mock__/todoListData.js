@@ -75,6 +75,11 @@ class TodoListData {
   clear = () => {
     this.todoListTasks = [];
   };
+
+  clearCompletedTasks = () => {
+    this.todoListTasks = this.todoListTasks.filter((task) => task.isCompleted === false);
+    return this.todoListTasks;
+  };
 }
 
 module.exports = TodoListData;

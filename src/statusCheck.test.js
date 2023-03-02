@@ -47,3 +47,10 @@ describe('editTaskDescription', () => {
     expect(todoListDataTest.editTaskDescription(taskListWrapperElement)).toBe(currentTaskArray);
   });
 });
+
+describe('clearCompleted', () => {
+  const todoListDataTest = new TodoListData();
+  test('check clear completed function', () => {
+    expect(todoListDataTest.clearCompletedTasks()).toBe(todoListDataTest.todoListTasks);
+  });
+});
