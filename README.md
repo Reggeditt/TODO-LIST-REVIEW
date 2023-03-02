@@ -8,7 +8,6 @@
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
   
-  <h3><b>Microverse README Template</b></h3>
 
 </div>
 
@@ -170,6 +169,8 @@ Feel free to check the [issue page](https://github.com/Reggeditt/TODO-LIST-REVIE
 <!-- SUPPORT -->
 You can contact me for any question you have on the listed social media pages.
 
+## Show your support
+
 If you like this project follow and give thumbs up on likedin
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -183,9 +184,7 @@ I would like to thank to my coding partner.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+## ❓ FAQ <a name="faq"></a>
 
 
 - **[What_version_of_chrome_do_I_need_to_view_the_page]**
