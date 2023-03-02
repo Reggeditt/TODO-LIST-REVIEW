@@ -39,7 +39,6 @@
 
 # 📖 [to-do-list] <a name="about-project"></a>
 
-
 **[# 📖 [to-do-list]  Webpage to save and dlelete Todo lists.  
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -99,8 +98,10 @@ In order to run this project you need:
 - Install Git in your computer [Git](https://git-scm.com/downloads)
 - Any text editor [VSCode](https://code.visualstudio.com/download) 
 - Install linters on your local env't
- 
-
+- Install jest on your local env't
+  > run the following command in your terminal
+  ```
+    npm install --save-dev jest
 
 ### Setup
 
@@ -114,16 +115,23 @@ Inside you will find the html file.
 
 Linters have been installed for this project(npm install).
 Added a gitignore file and included the node_modules and text.md files.
+Linter actions are integreated with github.
+install jest in your local environment for testing purposes.
+### Usage
+execute the following steps:
+To run the project on the html file run it through dev server.
 Linter actions are integreated witg github.
 
 ### Usage
 execute the following steps:
 To run the project on the html file run it through liveserver.
 
+
 ### Run tests
  run npx hint . 
  and npx stylelint "**/*.{css,scss}"
  and npx eslint .
+ and npm test
 
 
 ### Deployment
@@ -142,8 +150,6 @@ To run the project on the html file run it through liveserver.
 
  **YosefGeda**
 - GitHub: [@yosefgeda](https://github.com/yosefgeda)
-
- 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -194,5 +200,3 @@ I would like to thank to my coding partner.
 This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-

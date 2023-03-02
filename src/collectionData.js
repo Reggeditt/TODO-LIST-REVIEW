@@ -136,3 +136,5 @@ export default class TodoListData {
     this.todoListTasks = JSON.parse(window.localStorage.getItem('todoList'));
   };
 }
+
+// module.exports = TodoListData;
