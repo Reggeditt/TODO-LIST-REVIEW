@@ -39,7 +39,6 @@
 
 # 📖 [to-do-list] <a name="about-project"></a>
 
-
 **[# 📖 [to-do-list]  Webpage to save and dlelete Todo lists.  
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -121,6 +120,12 @@ install jest in your local environment for testing purposes.
 ### Usage
 execute the following steps:
 To run the project on the html file run it through dev server.
+Linter actions are integreated witg github.
+
+### Usage
+execute the following steps:
+To run the project on the html file run it through liveserver.
+
 
 ### Run tests
  run npx hint . 
@@ -131,6 +136,7 @@ To run the project on the html file run it through dev server.
 
 ### Deployment
 [You can view the page](https://reggeditt.github.io/todo-list-App2/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -194,5 +200,3 @@ I would like to thank to my coding partner.
 This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
